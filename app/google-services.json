@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "57676178671",
+    "project_id": "foodmax-47090",
+    "storage_bucket": "foodmax-47090.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57676178671:android:c0d7f950db962f335ca71a",
+        "android_client_info": {
+          "package_name": "com.example.foodmax"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57676178671-m55h14mnkj5p6sc1iht4es3btap4pibo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6eGlu4m-HekCzyXeM8E45nqylPGIz7gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57676178671-m55h14mnkj5p6sc1iht4es3btap4pibo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

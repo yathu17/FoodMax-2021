@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcten"
+    tools:context=".Payments.Card">
+
+    <ImageView
+        android:layout_height="42dp"
+        android:layout_width="41dp"
+        app:srcCompat="@drawable/masvis"
+        app:layout_constraintVertical_bias="0.78"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/inputCardExpiryYY"
+        android:id="@+id/imageView4"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/inputName"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCardDetails" android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="textCapCharacters"
+        android:hint="Card Holder Name (IN BLOCK LETTERS)"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ. "
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/inputCardNumber"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputName"
+        android:textStyle="bold"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="Enter Card Number"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="15dp"
+        tools:ignore="MissingConstraints"
+        android:maxLength="16"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/inputCardExpiry"
+
+
+
+
+        app:layout_constraintTop_toBottomOf="@+id/inputCardNumber" android:textStyle="bold"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="MM"
+        android:digits="01,02,03,04,05,06,07,08,09,10,11,12"
+        android:layout_marginTop="44dp"
+        tools:ignore="MissingConstraints"
+        android:maxLength="2"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/inputCardExpiryYY"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="YY"
+        android:inputType="number"
+        android:layout_marginTop="-4dp"
+        android:maxLength="2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toEndOf="@+id/inputCardExpiry"
+        app:layout_constraintTop_toBottomOf="@+id/inputCardNumber"
+        app:layout_constraintVertical_bias="0.098"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:background="@color/gray"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        android:id="@+id/CardExpirydate"
+        app:layout_constraintTop_toBottomOf="@+id/inputCardNumber"
+        android:textStyle="bold" android:textSize="18sp"
+        android:textColor="@color/teal_200"
+        android:layout_marginTop="52dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toStartOf="@+id/inputCardExpiry"
+        android:text="Enter Card Expiry Date"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textViewslaz"
+        app:layout_constraintTop_toBottomOf="@id/inputCardNumber"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintStart_toEndOf="@+id/inputCardExpiry"
+        android:text="/"
+        android:layout_marginStart="12dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_bias="0.952"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/phonenumber"
+        android:id="@+id/inputCardPin"
+        tools:layout_editor_absoluteX="0dp"
+        android:textStyle="bold"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="numberPassword"
+        android:hint="CVV Number XXX"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:maxLength="3"
+        android:cursorVisible="true"/>
+
+    <TextView
+        android:background="@color/gray"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="0.079"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tvCardDetails"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Card Details"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/phonenumber"
+        app:layout_constraintTop_toBottomOf="@+id/CardExpirydate"
+        android:textStyle="bold"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="Enter Phone number ex:-077XXXXXXX"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginLeft="15dp"
+        android:maxLength="10"
+        android:cursorVisible="true"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/BTOrder"
+        android:id="@+id/otp"
+        app:layout_constraintTop_toBottomOf="@+id/CardExpirydate"
+        android:textStyle="bold"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="Enter OTP here"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginLeft="15dp"
+        android:maxLength="5"
+        android:cursorVisible="true"/>
+
+    <Button
+        android:background="@drawable/round_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintVertical_bias="0.715"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/requestotp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Request Otp"/>
+
+    <Button
+        android:background="@drawable/round_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/BTOrder"
+        app:layout_constraintTop_toBottomOf="@+id/inputCardPin"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Conform"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
